@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 export function Home() {
-	const [state, setState] = setState({
+	const [state, setState] = useState({
 		red: "",
 		yellow: "",
 		green: ""
@@ -13,6 +13,8 @@ export function Home() {
 	};
 	return (
 		<div className="text-center mt-5">
+			{" "}
+			hello
 			<div
 				className="rounded-circle bg-danger border-dark"
 				style={
