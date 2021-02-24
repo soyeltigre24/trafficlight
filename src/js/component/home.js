@@ -12,14 +12,21 @@ export function Home() {
 		width: "30px"
 	};
 	return (
-		<div className="text-center mt-5">
-			{" "}
-			hello
+		<div
+			className="card"
+			style={{
+				background: "black",
+				width: "32px",
+				margin: "auto"
+			}}>
 			<div
 				className="rounded-circle bg-danger border-dark"
 				style={
 					!state.red
-						? { height: "30px", width: "30px" }
+						? {
+								height: "30px",
+								width: "30px"
+						  }
 						: stylesBorder
 				}
 				onClick={() =>
@@ -36,7 +43,7 @@ export function Home() {
 					setState({ red: "", yellow: "clicked", green: "" })
 				}></div>
 			<div
-				className="rounded circle bg-success border-dark"
+				className="rounded-circle bg-success border-dark"
 				style={
 					state.green
 						? stylesBorder
